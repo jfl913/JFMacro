@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JFMacro_Example' do
+  pod 'JFMacro', :path => '../'
+
+  target 'JFMacro_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
