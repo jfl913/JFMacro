@@ -26,7 +26,7 @@
 - (IBAction)tapButton:(id)sender {
     JFLog(@"First macro by: %@", @"jfl");
     
-    NSAssert(NO, @"The class of responseModel do not exist, check the responseModelName method of %@.", NSStringFromClass(self.class));
+    JFAssert(NO, @"The class of responseModel do not exist, check the responseModelName method of %@.", NSStringFromClass(self.class));
 }
 
 @end

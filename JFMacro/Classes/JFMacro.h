@@ -25,7 +25,7 @@ do { \
 #endif
 
 #ifndef __OPTIMIZE__
-#define JFAssert(condition, desc, ...) NSAssert(condition, desc, ...)
+#define JFAssert(condition, desc, ...) NSAssert(condition, desc, __VA_ARGS__)
 #else
 #define JFAssert(condition, desc, ...)
 #endif
