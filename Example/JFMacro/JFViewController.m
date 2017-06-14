@@ -7,6 +7,7 @@
 //
 
 #import "JFViewController.h"
+#import <JFMacro/JFMacro.h>
 
 @interface JFViewController ()
 
@@ -18,12 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)tapButton:(id)sender {
+    JFLog(@"First macro by: %@", @"jfl");
+    
+    NSAssert(NO, @"The class of responseModel do not exist, check the responseModelName method of %@.", NSStringFromClass(self.class));
 }
 
 @end
